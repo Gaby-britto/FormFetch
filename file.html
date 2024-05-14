@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Imagem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+ 
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+ 
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #053B50;
+        }
+ 
+        form {
+            text-align: center;
+        }
+ 
+        input[type="file"] {
+            margin: 10px 0;
+        }
+ 
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #053B50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload de Imagem</h1>
+        <form method="post" enctype="multipart/form-data">
+            Selecione uma imagem para enviar:
+            <br>
+            <input id="image" type="file" name="fileToUpload" id="fileToUpload">
+            <br>
+            <label class="label-input" for="">
+                <i class="far fa-user icon-modify"></i>
+                <input type="text" id="title" placeholder="Title">
+            </label>
+            <label class="label-input" for="">
+                <i class="far fa-user icon-modify"></i>
+                <input type="text" id="content" placeholder="Content">
+            </label>
+            <input type="submit" id="submit" value="Enviar Imagem" name="submit">
+        </form>
+    </div>
+    <script src="file.js"></script>
+</body>
+</html>
